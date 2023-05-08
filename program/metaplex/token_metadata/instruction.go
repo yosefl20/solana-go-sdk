@@ -436,15 +436,29 @@ func CreateMetadataAccountV2(param CreateMetadataAccountV2Param) types.Instructi
 	}
 }
 
-func CreateMetadataAccountV3(param CreateMetadataAccountV2Param) types.Instruction {
+type CreateMetadataAccountV3Param struct {
+	Metadata                common.PublicKey
+	Mint                    common.PublicKey
+	MintAuthority           common.PublicKey
+	Payer                   common.PublicKey
+	UpdateAuthority         common.PublicKey
+	UpdateAuthorityIsSigner bool
+	IsMutable               bool
+	Data                    DataV2
+	CollectionDetails       CollectionDetails
+}
+
+func CreateMetadataAccountV3(param CreateMetadataAccountV3Param) types.Instruction {
 	data, err := borsh.Serialize(struct {
-		Instruction Instruction
-		Data        DataV2
-		IsMutable   bool
+		Instruction       Instruction
+		Data              DataV2
+		IsMutable         bool
+		CollectionDetails CollectionDetails
 	}{
-		Instruction: InstructionCreateMetadataAccountV3,
-		Data:        param.Data,
-		IsMutable:   param.IsMutable,
+		Instruction:       InstructionCreateMetadataAccountV3,
+		Data:              param.Data,
+		IsMutable:         param.IsMutable,
+		CollectionDetails: param.CollectionDetails,
 	})
 
 	if err != nil {
