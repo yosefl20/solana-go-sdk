@@ -445,7 +445,7 @@ type CreateMetadataAccountV3Param struct {
 	UpdateAuthorityIsSigner bool
 	IsMutable               bool
 	Data                    DataV2
-	CollectionDetails       CollectionDetails
+	CollectionDetails       *CollectionDetails
 }
 
 func CreateMetadataAccountV3(param CreateMetadataAccountV3Param) types.Instruction {
@@ -453,7 +453,7 @@ func CreateMetadataAccountV3(param CreateMetadataAccountV3Param) types.Instructi
 		Instruction       Instruction
 		Data              DataV2
 		IsMutable         bool
-		CollectionDetails CollectionDetails
+		CollectionDetails *CollectionDetails
 	}{
 		Instruction:       InstructionCreateMetadataAccountV3,
 		Data:              param.Data,
