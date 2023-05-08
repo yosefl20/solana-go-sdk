@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	"github.com/near/borsh-go"
-	"github.com/portto/solana-go-sdk/common"
-	"github.com/portto/solana-go-sdk/pkg/pointer"
-	"github.com/portto/solana-go-sdk/types"
 	"github.com/stretchr/testify/assert"
+	"github.com/yosefl20/solana-go-sdk/common"
+	"github.com/yosefl20/solana-go-sdk/pkg/pointer"
+	"github.com/yosefl20/solana-go-sdk/types"
 )
 
 func TestCreateMetadataAccount(t *testing.T) {

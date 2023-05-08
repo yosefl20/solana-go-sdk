@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/portto/solana-go-sdk/internal/client_test"
-	"github.com/portto/solana-go-sdk/rpc"
+	"github.com/yosefl20/solana-go-sdk/internal/client_test"
+	"github.com/yosefl20/solana-go-sdk/rpc"
 )
 
 func TestClient_GetMinimumBalanceForRentExemption(t *testing.T) {

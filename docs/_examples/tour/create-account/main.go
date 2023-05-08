@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/mr-tron/base58"
-	"github.com/portto/solana-go-sdk/pkg/hdwallet"
-	"github.com/portto/solana-go-sdk/types"
 	"github.com/tyler-smith/go-bip39"
+	"github.com/yosefl20/solana-go-sdk/pkg/hdwallet"
+	"github.com/yosefl20/solana-go-sdk/types"
 )
 
 func main() {

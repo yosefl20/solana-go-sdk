@@ -8,12 +8,12 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/portto/solana-go-sdk/common"
-	"github.com/portto/solana-go-sdk/pkg/pointer"
-	"github.com/portto/solana-go-sdk/program/system"
-	"github.com/portto/solana-go-sdk/rpc"
-	"github.com/portto/solana-go-sdk/types"
 	"github.com/stretchr/testify/assert"
+	"github.com/yosefl20/solana-go-sdk/common"
+	"github.com/yosefl20/solana-go-sdk/pkg/pointer"
+	"github.com/yosefl20/solana-go-sdk/program/system"
+	"github.com/yosefl20/solana-go-sdk/rpc"
+	"github.com/yosefl20/solana-go-sdk/types"
 )
 
 func TestGetBlock(t *testing.T) {

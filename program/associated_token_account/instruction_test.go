@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/portto/solana-go-sdk/common"
-	"github.com/portto/solana-go-sdk/types"
 	"github.com/stretchr/testify/assert"
+	"github.com/yosefl20/solana-go-sdk/common"
+	"github.com/yosefl20/solana-go-sdk/types"
 )
 
 func TestCreateAssociatedTokenAccount(t *testing.T) {

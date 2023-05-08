@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/portto/solana-go-sdk/internal/client_test"
+	"github.com/yosefl20/solana-go-sdk/internal/client_test"
 )
 
 func TestGetTokenBalance(t *testing.T) {

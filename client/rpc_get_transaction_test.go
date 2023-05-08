@@ -5,11 +5,11 @@ import (
 	"testing"
 
 	"github.com/mr-tron/base58"
-	"github.com/portto/solana-go-sdk/common"
-	"github.com/portto/solana-go-sdk/internal/client_test"
-	"github.com/portto/solana-go-sdk/pkg/pointer"
-	"github.com/portto/solana-go-sdk/rpc"
-	"github.com/portto/solana-go-sdk/types"
+	"github.com/yosefl20/solana-go-sdk/common"
+	"github.com/yosefl20/solana-go-sdk/internal/client_test"
+	"github.com/yosefl20/solana-go-sdk/pkg/pointer"
+	"github.com/yosefl20/solana-go-sdk/rpc"
+	"github.com/yosefl20/solana-go-sdk/types"
 )
 
 func TestClient_GetTransaction(t *testing.T) {

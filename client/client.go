@@ -5,10 +5,10 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/portto/solana-go-sdk/common"
-	"github.com/portto/solana-go-sdk/program/token"
-	"github.com/portto/solana-go-sdk/rpc"
-	"github.com/portto/solana-go-sdk/types"
+	"github.com/yosefl20/solana-go-sdk/common"
+	"github.com/yosefl20/solana-go-sdk/program/token"
+	"github.com/yosefl20/solana-go-sdk/rpc"
+	"github.com/yosefl20/solana-go-sdk/types"
 )
 
 type Client struct {

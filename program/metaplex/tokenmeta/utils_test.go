@@ -3,8 +3,8 @@ package tokenmeta
 import (
 	"testing"
 
-	"github.com/portto/solana-go-sdk/common"
 	"github.com/stretchr/testify/assert"
+	"github.com/yosefl20/solana-go-sdk/common"
 )
 
 func TestGetEditionMark(t *testing.T) {
